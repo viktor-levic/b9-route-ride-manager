@@ -1,19 +1,23 @@
-package org.example.b9routeridemanager.tables.logistics_info;
+package org.example.b9routeridemanager.entities.LogisticsInfo;
 
 import jakarta.persistence.*;
 
 @Entity
 @Table(name = "cities")
-public class Cities {
+public class City {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "city_name", nullable = false)
     private String cityName;
 
 
-    public Cities() {
+    public City() {}
+
+    public City(Long id, String cityName) {
+        this.id = id;
+        this.cityName = cityName;
     }
 
 

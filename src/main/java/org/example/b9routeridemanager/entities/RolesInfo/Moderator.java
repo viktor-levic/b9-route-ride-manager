@@ -1,39 +1,35 @@
-package org.example.b9routeridemanager.tables.roles;
+package org.example.b9routeridemanager.entities.RolesInfo;
 
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "user_cashier", schema = "public")
-public class User {
+@Table(name = "moderator")
+public class Moderator {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
 
-    @Column(name = "name", nullable = false)
     private String name;
-
-    @Column(name = "login", nullable = false)
     private String login;
-
-    @Column(name = "password", nullable = false)
     private String password;
 
 
-    public User() {
-    }
+    public Moderator() {}
 
-    public User(Integer id, String name, String login, String password) {
+    public Moderator(Long id, String name, String login, String password) {
         this.id = id;
         this.name = name;
         this.login = login;
         this.password = password;
     }
 
-    public Integer getId() {
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

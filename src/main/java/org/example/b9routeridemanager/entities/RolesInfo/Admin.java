@@ -1,25 +1,27 @@
-package org.example.b9routeridemanager.tables.roles;
+package org.example.b9routeridemanager.entities.RolesInfo;
 
 import jakarta.persistence.*;
 
 @Entity
 @Table(name = "admin")
 public class Admin {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name", nullable = false)
     private String name;
-
-    @Column(name = "login", nullable = false)
     private String login;
-
-    @Column(name = "password", nullable = false)
     private String password;
 
 
-    public Admin() {
+    public Admin() {}
+
+    public Admin(Long id, String name, String login, String password) {
+        this.id = id;
+        this.name = name;
+        this.login = login;
+        this.password = password;
     }
 
 
@@ -43,7 +45,9 @@ public class Admin {
         return login;
     }
 
-    public void setLogin(String login) { this.login = login; }
+    public void setLogin(String login) {
+        this.login = login;
+    }
 
     public String getPassword() {
         return password;
