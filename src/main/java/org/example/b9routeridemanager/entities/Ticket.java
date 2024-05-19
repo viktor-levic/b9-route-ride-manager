@@ -44,7 +44,7 @@ public class Ticket {
 
     public Ticket() {}
 
-    public Ticket(Long id, String passengerName, Route route, City departureCity, City arrivalCity, String ticketNumber, String seatNumber, LocalDateTime dateOfSelling, Cashier cashier) {
+public Ticket(Long id, String passengerName, Route route, City departureCity, City arrivalCity, String ticketNumber, String seatNumber, LocalDateTime dateOfSelling, Cashier cashier) {
         this.id = id;
         this.passengerName = passengerName;
         this.route = route;
@@ -55,7 +55,6 @@ public class Ticket {
         this.dateOfSelling = dateOfSelling;
         this.cashier = cashier;
     }
-
 
     public Long getId() {
         return id;

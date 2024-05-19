@@ -1,6 +1,8 @@
 package org.example.b9routeridemanager.dao;
 
-import jakarta.persistence.*;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
 import org.example.b9routeridemanager.entities.Ticket;
 
 

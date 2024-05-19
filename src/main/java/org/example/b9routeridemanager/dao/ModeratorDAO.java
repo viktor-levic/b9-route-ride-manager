@@ -7,7 +7,10 @@ import org.example.b9routeridemanager.entities.TicketStatus;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.springframework.stereotype.Repository;
 
+
+@Repository
 public class ModeratorDAO extends TicketDAO {
 
     @Override

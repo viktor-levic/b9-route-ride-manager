@@ -2,13 +2,18 @@ package org.example.b9routeridemanager.dao;
 
 import org.example.b9routeridemanager.config.HibernateUtil;
 import org.example.b9routeridemanager.entities.LogisticsInfo.Route;
+import org.example.b9routeridemanager.entities.RolesInfo.Admin;
 import org.example.b9routeridemanager.entities.RolesInfo.Cashier;
 import org.example.b9routeridemanager.entities.Ticket;
 import org.example.b9routeridemanager.entities.TicketStatus;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.HibernateException;
+import org.springframework.stereotype.Repository;
+import java.util.List;
 
+
+@Repository
 public class AdminDAO extends TicketDAO {
 
     @Override
@@ -136,6 +141,62 @@ public class AdminDAO extends TicketDAO {
             // Додайте додаткову обробку винятків, якщо необхідно
         } finally {
             session.close();
+        }
+    }
+
+    public Admin addAdmin(Admin admin) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Transaction transaction = null;
+        try {
+            transaction = session.beginTransaction();
+            session.save(admin);
+            transaction.commit();
+            return admin;
+        } catch (Exception e) {
+            if (transaction != null) {
+                transaction.rollback();
+            }
+            e.printStackTrace();
+            throw e;
+        }
+    }
+
+    public Admin getAdminById(Long id) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        try {
+            return session.get(Admin.class, id);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw e;
+        }
+    }
+
+    public List<Admin> getAllAdmins() {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        try {
+            return session.createQuery("from Admin", Admin.class).list();
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw e;
+        }
+    }
+
+    public void deleteAdmin(Long id) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Transaction transaction = null;
+        try {
+            transaction = session.beginTransaction();
+            Admin admin = session.get(Admin.class, id);
+            if (admin != null) {
+                session.delete(admin);
+            }
+            transaction.commit();
+        } catch (Exception e) {
+            if (transaction != null) {
+                transaction.rollback();
+            }
+            e.printStackTrace();
+            throw e;
         }
     }
 }

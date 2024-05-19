@@ -5,7 +5,10 @@ import org.example.b9routeridemanager.entities.Ticket;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.springframework.stereotype.Repository;
 
+
+@Repository
 public class CashierDAO extends TicketDAO {
 
     @Override
