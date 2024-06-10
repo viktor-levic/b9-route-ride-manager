@@ -114,9 +114,14 @@ Project structure has such structure:
 
 ## 🏃‍ How to run application 🏃
 1. Clone the project to your IDE from GitHub.
-2. Configure connection to DB in resources in file db.properties ([this fields](https://github.com/viktor-levic/b9-route-ride-manager/blob/main/src/main/src/main/resources/db.properties#L2)) with your own URL, username, password and JDBC driver.
+2. Configure connection to DB in resources in file db.properties ([this fields](viktor-levic/b9-route-ride-manager/blob/main/src/main/resources/application.properties)) with your own URL, username, password and JDBC driver.
 3. Configure Tomcat (recommended [9.0.50 version](https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.50/bin/)).
 4. Run program using `Shift + F10`.
 5. The window must automatically open in your browser, if not type this URL `http://localhost:8080/login` or `http://localhost:8080/`.
-6. You can log in as user using login: `user@i.ua` and password: `user123` or admin using login: `admin@i.ua` and password: `admin123`.
-7. Enjoy.
+6. Before entering you need to create role (admin or user) and to add certain values to your database.
+
+For example, it may looks like:
+![image](https://github.com/viktor-levic/b9-route-ride-manager/assets/133751188/fbe1d16b-cf93-4080-9c87-87fc1f411933)
+
+7. After that you can log in as user or admin using login which you are created.
+8. That's all, thanks for watching!
