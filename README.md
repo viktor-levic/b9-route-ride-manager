@@ -81,18 +81,10 @@ Project structure has such structure:
 ---
 
 ### DB structure
-<img src="images/cinema_structure.png" alt="Header" width="1420"> <br>
+![image](https://github.com/viktor-levic/b9-route-ride-manager/assets/133751188/cdc0bf5c-5cc4-4bb8-8cb3-5e0030b4c821)
+
 
 ## 🤖 Technologies 🤖
-
-<div>
-<img src="assets/java_logo.png" alt="java-logo" height="90" />
-<img src="assets/hibernate_logo.jpg" alt="hibernate-logo" height="90" />
-<img src="assets/spring_logo.png" alt="spring-logo" height="90" />
-<img src="assets/postgresql_sql.png" alt="postgresql-logo" height="90" />
-<img src="assets/jakartaee_logo.png" alt="jakarta-logo" height="90" />
-<img src="assets/javascript_logo.png" alt="jakarta-logo" height="90" />
-</div>
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
@@ -111,17 +103,20 @@ Project structure has such structure:
 | Technology             | Version |
 |:-----------------------|:--------|
 | JDK                    | 17      |
+| JavaScript             | 1.8.5   |
 | Maven                  | 4.0.0   |
 | TomCat                 | 9.0.50  |
-| MySQL                  | 8.0.22  |
+| PostgreSQL             | 16.1    |
 | Spring (WEB, Security) | 5.2.2   |
 | Hibernate              | 5.4.27  |
+| JUnit                  | 5.8.1   |
+
 
 ## 🏃‍ How to run application 🏃
 1. Clone the project to your IDE from GitHub.
-2. Configure connection to DB in resources in file db.properties ([this fields](https://github.com/denys-domashevskyi/taxi-service/blob/main/src/main/src/main/resources/db.properties#L2)) with your own URL, username, password and JDBC driver.
+2. Configure connection to DB in resources in file db.properties ([this fields](https://github.com/viktor-levic/b9-route-ride-manager/blob/main/src/main/src/main/resources/db.properties#L2)) with your own URL, username, password and JDBC driver.
 3. Configure Tomcat (recommended [9.0.50 version](https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.50/bin/)).
 4. Run program using `Shift + F10`.
-5. The window must automatically open in your browser, if not type this URL `http://localhost:8080/login`.
+5. The window must automatically open in your browser, if not type this URL `http://localhost:8080/login` or `http://localhost:8080/`.
 6. You can log in as user using login: `user@i.ua` and password: `user123` or admin using login: `admin@i.ua` and password: `admin123`.
 7. Enjoy.
