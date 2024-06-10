@@ -1,4 +1,7 @@
-https://img.icons8.com/?size=100&id=112232&format=png&color=000000 # Bus Transportation API
+<div>
+<img src="https://img.icons8.com/?size=100&id=112232&format=png&color=000000" alt="bus-logo" height="20" >
+</div>
+  # Bus Transportation API
 ## A full-fledged API for managing bus transportation
 
 # My contacts
