@@ -1,5 +1,21 @@
+# 🚌 Service for ordering bus tickets 🚌
+<h1 align="center">
+<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Finforesist.org%2Fpreimushhestva-zakaza-avtobusnyih-biletov-cherez-servis-busfor-ua%2F&psig=AOvVaw1CqJsP6KqWHXwlgkjiuhjm&ust=1718101184122000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMi1m-jn0IYDFQAAAAAdAAAAABAE" 
+alt="Header" width="250"> <br>
+</h1>
+<details align="center">
+  <summary> <h4> Table Content </h4>  </summary>
+    <p align="center" style="color: #fa464f">
+        • <a href="#-Description-" style="color: #a8b6c5">Description</a>
+        • <a href="#-Features-of-the-program-" style="color: #a8b6c5">Features of the program</a> <br>
+        • <a href="#-Project-structure-" style="color: #a8b6c5">Project Structure</a>
+        • <a href="#-Technologies-" style="color: #a8b6c5">Technologies</a>
+        • <a href="#-How-to-run-application-" style="color: #a8b6c5">How to run the application</a>
+    </p>
+</details>
+
 <div>
-<img src="https://img.icons8.com/?size=100&id=112232&format=png&color=000000" alt="bus-logo" height="20" >
+<img src="https://img.icons8.com/?size=100&id=KXKIFxpA3E9g&format=png&color=000000" alt="bus-logo" height="20" >
 </div>
   # Bus Transportation API
 ## A full-fledged API for managing bus transportation
