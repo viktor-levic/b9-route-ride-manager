@@ -1,7 +1,6 @@
 # 🚌 Service for ordering bus tickets 🚌
 <h1 align="center">
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Finforesist.org%2Fpreimushhestva-zakaza-avtobusnyih-biletov-cherez-servis-busfor-ua%2F&psig=AOvVaw1CqJsP6KqWHXwlgkjiuhjm&ust=1718101184122000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMi1m-jn0IYDFQAAAAAdAAAAABAE" 
-alt="Header" width="250"> <br>
+<img src="assets/bus-header.png" alt="Header" width="250"> <br>
 </h1>
 <details align="center">
   <summary> <h4> Table Content </h4>  </summary>
